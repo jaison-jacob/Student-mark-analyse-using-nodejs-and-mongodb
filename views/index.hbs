@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+<title>LOGIN PAGE</title>
+
+ </head>
+ <style>
+#loginbox{
+
+background-color: darkcyan;
+position: absolute;
+top: 20%;
+left: 40%;
+height: 200px;
+width: 300px;
+border-style: solid;
+border-color: darkblue;
+padding: 50px;
+}
+h3{
+    position: absolute;
+    top: 10px;
+}
+.GFG{ 
+            background-color:aquamarine; 
+            border: 2px solid rgba(17, 3, 99, 0.068); 
+            color: green; 
+            padding: 5px 10px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 10px; 
+            margin: 10px 10px; 
+            cursor: pointer; 
+           position: absolute;
+           left: 180px;
+           top:103px;
+        }
+#btn{
+      background-color:aquamarine;
+       border: 2px solid rgba(17, 3, 99, 0.068); 
+      color: green; 
+        padding: 5px 10px; 
+       font-size: 10px; 
+ }        
+#inputbox{
+
+position: absolute;
+
+top: 80px;
+
+}
+
+ </style>
+
+<body>
+
+    <div id="loginbox"> 
+<h3>LOGIN FORM</h3>
+
+<div id="inputbox">
+
+<form action="/logindata" method="POST" autocomplete="off">
+
+<label>USER NAME</label><br>
+<input name="username" id="username"><br><br>
+
+<label>password</label><br>
+<input name="password" id="password"><br><br>
+
+<button type="submit" id="btn">SEND</button>
+
+
+</form>
+
+<button class="GFG" 
+    onclick="window.location.href = 'http://localhost:8080/register';"> 
+        click here to register 
+    </button>
+
+
+
+</div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

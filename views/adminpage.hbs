@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+<title>LOGIN PAGE</title>
+
+ </head>
+ <style>
+#loginbox{
+
+background-color: darkcyan;
+position: absolute;
+top: 20%;
+left: 40%;
+height: 200px;
+width: 300px;
+border-style: solid;
+border-color: darkblue;
+padding: 50px;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    left: 120px;
+}
+a{
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+#inputbox{
+
+position: absolute;
+
+top: 80px;
+
+}
+#btn1{ 
+            background-color:antiquewhite; 
+            border: 2px solid rgba(17, 3, 99, 0.068); 
+            color: green; 
+            padding: 5px 10px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 12px; 
+            margin: 10px 10px; 
+            cursor: pointer; 
+           position: absolute;
+           left: 70px;
+           top:73px;
+           width: 150px;
+        }
+        #btn2{ 
+            background-color:antiquewhite; 
+            border: 2px solid rgba(17, 3, 99, 0.068); 
+            color: green; 
+            padding: 5px 10px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 12px; 
+            margin: 10px 10px; 
+            cursor: pointer; 
+           position: absolute;
+           left: 70px;
+           top:123px;
+           width: 150px;
+        }
+
+
+
+ </style>
+
+<body>
+
+    <div id="loginbox"> 
+<h3>ADMIN PAGE</h3>
+
+<div id="inputbox">
+
+
+
+<p>hi </p>
+
+<tbody>
+   {{#each list}}
+   {{this.username}}
+
+   {{/each}}
+</tbody>
+
+
+
+
+<button id="btn1" 
+    onclick="window.location.href = 'http://localhost:8080/studentdetail';"> 
+        GET STUDENT DATA
+    </button>
+    <button id="btn2" 
+    onclick="window.location.href = 'http://localhost:8080/studentdataform';"> 
+        SAVE STUDENT DATA
+    </button>
+
+
+
+</div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

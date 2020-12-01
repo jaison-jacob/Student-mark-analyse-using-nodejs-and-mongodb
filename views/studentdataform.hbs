@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+<title>STUDENT DATA FORM PAGE</title>
+
+ </head>
+ <style>
+#loginbox{
+
+background-color: darkcyan;
+color: chartreuse;
+position: absolute;
+top: 0%;
+left: 40%;
+height: 300px;
+width: 300px;
+border-style: solid;
+border-color: darkblue;
+padding: 50px;
+}
+h3{
+    position: absolute;
+    top: 10px;
+}
+a{
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+#inputbox{
+
+position: absolute;
+
+top: 80px;
+color:gold;
+}
+.GFG{ 
+            background-color:bisque; 
+            border: 2px solid rgba(17, 3, 99, 0.068); 
+            color: green; 
+            padding: 5px 10px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 10px; 
+            margin: 10px 10px; 
+            cursor: pointer; 
+          
+        }
+
+ </style>
+
+<body>
+
+    <div id="loginbox"> 
+<h3>STUDENT DATA FORM</h3>
+
+<tbody>
+    {{message}}
+</tbody>
+
+<div id="inputbox">
+
+<form action="/studentdata" method="POST" autocomplete="off">
+
+<label>ID</label><br>
+<input type="text" name="id" id="id" placeholder="ID"><br>
+
+<label>NAME</label><br>
+<input type="text" name="name" id="name" placeholder="NAME"><br>
+
+<label>TAMIL MARK</label><br>
+<input type="text" name="tamil" id="tamil" placeholder="TAMIL MARK"><br>
+
+<label>ENGLISH MARK</label><br>
+<input type="text" name="english" id="english" placeholder="ENGLISH MARK"><br>
+
+<label>MATHS MARK</label><br>
+<input type="text" name="maths" id="maths" placeholder="MATHS MARK"><br>
+
+<label>SCIENCE MARK</label><br>
+<input type="text" name="science" id="science" placeholder="SCIENCE MARK"><br>
+
+<label>SOCIAL</label><br>
+<input type="text" name="social" id="social" placeholder="SOCIAL MARK"><br><br>
+
+<button type="submit" >SEND</button>  
+
+
+
+</form>
+
+<button class="GFG" 
+    onclick="window.location.href = 'http://localhost:8080/adminpage';"> 
+        BACK
+    </button>
+
+
+
+</div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
